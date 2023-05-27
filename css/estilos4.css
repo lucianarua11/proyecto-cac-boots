@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    
+}
+.header{
+    width: auto;
+}
+
+.ColorNav{
+    background-color: rgb(53, 58, 64);
+    
+}
+.navbar-nav .nav-item .colorVerde{
+    color: green;
+    text-decoration: none;
+    
+}
+
+.card .card-body .card-text{
+    padding-bottom: 1.5rem;
+    line-height: 3rem;
+
+}
+.card {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    margin: 3px;
+
+}
+.opcionTicket{
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0%;
+    margin-right: 0%;
+    
+    
+}
+.ventaTicket{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.compra{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.container{
+    max-width: 65%;
+    justify-content: center;
+}
+
+
+.Cantidad{
+    text-align: left;
+}
+.Categoria{
+    text-align: left;
+}
+
+.aPagar{
+    background-color: rgb(140, 180, 197);
+    color: rgb(53, 89, 133);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+
+.formSubmit{
+    width: 100%;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(105, 199, 105);
+    border-radius: 4px;
+    font-size: 1rem;  
+    margin-bottom: 0;
+}
+
+.footer{
+    background:linear-gradient( to right, #1d3947,#1d4962, #1e5372);
+    flex-wrap: wrap;
+    height: initial;
+    padding: 30px;
+    width: auto;
+    
+}
+.contenedorFooter a {
+    color: white;
+    font-size:1.1rem;
+    text-decoration: none;
+}
+
