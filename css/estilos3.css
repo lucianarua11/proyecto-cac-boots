@@ -268,7 +268,38 @@ textarea {
         border-radius: 4px;
         font-size: small;
     }
+    .lugarFecha{
+        display: inline-block;
+        height: 60vh;
+        width: 100%;
+        position:relative;
+        
+    }
+    
+    .columnaDer{
+        
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #00000026, #000000c2,#00000026),url("../assets/img/honolulu\ mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color:white;
+        position:absolute;
+        top:0;
+        left:0;
+        padding: 5px 2px;
+        line-height: 0.5;
+        text-align: center;
+        
+    }
+    .columnaDer .info{
+        line-height: 22px;
+    }
+
 }
+
+
 /***********************************************/
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
@@ -308,5 +339,29 @@ textarea {
         text-decoration: none;
         border-radius: 4px;
         font-size: small;
+    }
+    .lugarFecha{
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        position:relative;
+        align-items: center;
+        
+    }
+    
+    .columnaDer{
+        
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #00000026, #000000c2,#00000026),url("../assets/img/honolulu\ mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color:white;
+        position:absolute;
+        padding: 0%;
+        text-align: center;
+        align-items: center;
+    
     }
 }
