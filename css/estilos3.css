@@ -234,6 +234,11 @@ textarea {
 
 @media screen and (max-width: 767px) {
 
+    .carousel-inner .carousel-item .carousel-caption{
+        padding-bottom: 0%;
+        ;
+        
+    }
     .carousel-inner .carousel-item .carousel-caption .tituloParrafo{
         font-size:larger;
         padding-bottom: 0%;
@@ -245,7 +250,24 @@ textarea {
     .carousel-inner .carousel-item .carousel-caption .parrafoConferencia{
         font-size: small;
         padding-bottom: 0%;
-        
+        line-height: 20px;
     }
 
+    .carousel-inner .carousel-item .carousel-caption .Conviertete{
+        font-size: small;
+        color: white;
+        border: 1px solid #e7e8ea;
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .carousel-inner .carousel-item .carousel-caption .tickets{
+        color: white;
+        padding: 5px;
+        background-color: green;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: small;
+    }
 }
