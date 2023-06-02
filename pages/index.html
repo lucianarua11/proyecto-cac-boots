@@ -39,7 +39,7 @@
                                 <a class="nav-link" href="../index.html">Conviertete en Orador</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link colorVerde" href="../index.html" target="_blank">Comprar tickets</a>
+                                <a class="nav-link colorVerde" href="#ventaTicket" target="_blank">Comprar tickets</a>
                             </li>
                         </ul>
                     </div>
@@ -82,45 +82,47 @@
             <section id="ventaTicket" class="ventaTicket mb-4">
                 <div class="container">
                     <h2 class="tituloForm"><span style="font-size:80%; font-weight: lighter;"><small>VENTA</small></span><br> <big style="font-size:200%;">VALOR DEL TICKET $200</big></h2>
-                    <div class="compra">
+                    <div id="compra" class="compra">
                         <div class="row">
-                            <form class="form">
+                            <form id="formulario1" class="form" name="formulario1" method="post" action="********pagina_destino.php">
+                                
                                 <div class="row px-0">
                                     <div class="col-sm-12 col-md-6 pb-3">
-                                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
                                     </div>
                                     <div class="col-sm-12 col-md-6 pb-3">
-                                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido" required>
                                     </div>
                                     <div class="col-sm-12 pb-3">
-                                        <input type="email" class="form-control" id="email" placeholder="Correo" name="Correo">
+                                        <input type="email" class="form-control" id="email-form" placeholder="Correo" name="Correo" required>
                                     </div>
                                 </div>
                                     
-                                <div class="row px-0">
-                                    <div class="col-sm-12 col-md-6 pb-3">
-                                        <p class="cantidad" style="text-align: left;">Cantidad</p>
-                                        <input id="cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+                                <div class="CantCat row px-0">
+                                    <div class="Cantidad col-sm-12 col-md-6 pb-3">
+                                        <label for="" class="Cantidad">Cantidad</label>
+                                        <input id="cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
                                     </div>
-                                    <div class="col-sm-12 col-md-6 pb-3">
-                                        <p id=categoria class="categoria" style="text-align: left;">Categoria</p>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Selecciona una opcion</option>
-                                            <option value="1">Estudiante</option>
-                                            <option value="2">Trainee</option>
-                                            <option value="3">Junior</option>
+                                    <div class="Categoria col col-sm-12 col-md-6 pb-3">
+                                        <label for="" class="Categoria">Categoria</label>
+                                        <select id="categoria" name="categoria" class="form-select" aria-label="Default select example" type="checkbox" required>
+                                            <option selected value="selected">Selecciona una opcion</option>
+                                            <option value="estudiante">Estudiante</option>
+                                            <option value="trainee">Trainee</option>
+                                            <option value="junior">Junior</option>
                                         </select>
+                                        
                                     </div>
                                 </div>
                                 
                                 <div class="row" style="margin-right: 0px; margin-left: 0px; margin-bottom: 3px;">
-                                    <a id="aPagar" href="#" class="aPagar"></a>
+                                    <a id="aPagar"  class="aPagar">Total a Pagar: $</a>
                                     
                                 </div>
                                     
                                 <div class="row px-0">
                                     <div class="col-sm-12 col-md-6 mt-2">
-                                        <input type="reset" value="Borrar" class="formSubmit">
+                                        <input id="reset" type="reset" onclick="window.location.reload()" value="Borrar" class="formSubmit">
                                     </div>
                                     <div class="col-sm-12 col-md-6 mt-2">
                                         <input type="submit" value="Resumen" class="formSubmit">
