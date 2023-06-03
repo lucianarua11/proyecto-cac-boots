@@ -36,6 +36,12 @@ h1,h2,h3,h4,h5,h6{
 .foto {
     filter: brightness(70%);
 }
+
+.carousel-inner .carousel-item .carousel-caption{
+        padding-bottom: 0%;
+        margin-bottom: 2.5rem;
+        
+    }
 .carousel-inner .carousel-item .carousel-caption .tituloParrafo{
     
     color:white;
@@ -234,7 +240,7 @@ textarea {
 
     .carousel-inner .carousel-item .carousel-caption{
         padding-bottom: 0%;
-        ;
+        margin-bottom: 2rem;
         
     }
     .carousel-inner .carousel-item .carousel-caption .tituloParrafo{
@@ -306,7 +312,7 @@ textarea {
 
     .carousel-inner .carousel-item .carousel-caption{
         padding-bottom: 0%;
-        ;
+        margin-bottom: 2rem;
         
     }
     .carousel-inner .carousel-item .carousel-caption .tituloParrafo{
