@@ -32,9 +32,14 @@ formulario.addEventListener('submit', function(event){
                         console.log('Total a Pagar: $ ' + (valor * cantidad));
 
         
-        var botonRespuesta = document.getElementById('aPagar');
+        let botonRespuesta = document.getElementById('aPagar');
         botonRespuesta.style.display = 'block';
         botonRespuesta.textContent = 'Total a Pagar: $ ' + (valor * cantidad);
+
+        let botonReset = document.getElementById('reset');
+        botonReset.addEventListener('click', () => {
+            document.getElementById('aPagar').innerText = 'Total a Pagar: $ 0';
+        })
         
 
 })
