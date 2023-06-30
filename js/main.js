@@ -22,14 +22,16 @@ formulario.addEventListener('submit', function(event){
     if (categoria === 'selected') {   
         alert('Selecciona una opción de categoría');
         return;
-            } else if (categoria === 'estudiante') {
-                valor = (valor - (valor * 80/100)); // Aplicar un descuento del 80% para estudiantes
-                    } else if (categoria === 'trainee') {
-                        valor = valor - (valor * 50/100); // Aplicar un descuento del 50% para trainee 
-                        }else if (categoria === 'junior') {
-                            valor = valor - (valor * 15/100); // Aplicar un descuento del 15% para junior 
-                            }
-                        console.log('Total a Pagar: $ ' + (valor * cantidad));
+        } else if (categoria === 'SinCategoria') {
+            valor = valor; // No aplicar ningun descuento 
+                } else if (categoria === 'estudiante') {
+                    valor = (valor - (valor * 80/100)); // Aplicar un descuento del 80% para estudiantes
+                        } else if (categoria === 'trainee') {
+                            valor = valor - (valor * 50/100); // Aplicar un descuento del 50% para trainee 
+                            }else if (categoria === 'junior') {
+                                valor = valor - (valor * 15/100); // Aplicar un descuento del 15% para junior 
+                                }
+                            console.log('Total a Pagar: $ ' + (valor * cantidad));
 
         
         let botonRespuesta = document.getElementById('aPagar');

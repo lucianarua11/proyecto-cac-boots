@@ -9,7 +9,6 @@
 
 body{
     font-family: 'Noto Sans', sans-serif;
-    
 
 }
 h1,h2,h3,h4,h5,h6{
@@ -23,7 +22,6 @@ h1,h2,h3,h4,h5,h6{
 
 .ColorNav{
     background-color: rgb(53, 58, 64);
-    
 }
 .navbar-nav .nav-item .colorVerde{
     color: green;
@@ -43,14 +41,12 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .opcionTicket{
-    
+    position: relative;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0%;
-    margin-right: 0%;
+    padding-top: 5rem;
     
     
 }
@@ -118,7 +114,7 @@ h1,h2,h3,h4,h5,h6{
     background:linear-gradient( to right, #1d3947,#1d4962, #1e5372);
     flex-wrap: wrap;
     height: initial;
-    padding: 30px;
+    padding: 25px;
     width: auto;
     
 }
